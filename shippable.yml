@@ -2,11 +2,13 @@ language: python
 
 python:
   - 2.7
-addons:
-  firefox: "28.0"
+
 services:
   - selenium
 
+addons:
+  firefox: "28.0"
+  selenium: "29.0"
 env:
   global:
     - DISPLAY=:99.0
