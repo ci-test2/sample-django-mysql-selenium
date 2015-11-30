@@ -7,8 +7,8 @@ services:
   - selenium
 
 addons:
-  selenium: "2.43"
-  firefox: "33.0"
+  selenium: "2.40"
+  firefox: "19.0"
   
 env:
   global:
@@ -22,6 +22,7 @@ before_script:
   - mkdir -p shippable/codecoverage
   - mysql -e 'create database test;'
   - /etc/init.d/xvfb start 
+  - firefox --version
 
 script:
   - python manage.py test
