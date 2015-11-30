@@ -8,7 +8,7 @@ services:
 
 addons:
   selenium: "2.40"
-  firefox: "19.0"
+  firefox: "54.0"
   
 env:
   global:
