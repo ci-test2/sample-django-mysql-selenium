@@ -7,8 +7,9 @@ services:
   - selenium
 
 addons:
+  selenium: "2.44"
   firefox: "28.0"
-  selenium: "29.0"
+  
 env:
   global:
     - DISPLAY=:99.0
