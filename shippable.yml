@@ -7,8 +7,8 @@ services:
   - selenium
 
 addons:
-  selenium: "2.44"
-  firefox: "28.0"
+  selenium: "2.43"
+  firefox: "33.0"
   
 env:
   global:
