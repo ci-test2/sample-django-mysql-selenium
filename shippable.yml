@@ -29,5 +29,5 @@ script:
 
 after_script:
   - /etc/init.d/xvfb stop
-  
-  
+
+archive : true
