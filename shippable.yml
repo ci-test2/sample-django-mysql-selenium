@@ -6,10 +6,6 @@ python:
 services:
   - selenium
 
-addons:
-  selenium: "2.40"
-  firefox: "3.5"
-  
 env:
   global:
     - DISPLAY=:99.0
