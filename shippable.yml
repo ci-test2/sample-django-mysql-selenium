@@ -27,3 +27,5 @@ after_script:
   - /etc/init.d/xvfb stop
 
 archive : true
+
+build_image: drydock/u12pytpls:tip
