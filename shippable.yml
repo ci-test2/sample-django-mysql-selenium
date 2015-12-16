@@ -18,14 +18,14 @@ before_script:
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
   - mysql -e 'create database if not exists test;'
-  - /etc/init.d/xvfb start 
+  #- /etc/init.d/xvfb start 
   - firefox --version
 
 script:
   - python manage.py test
 
-after_script:
-  - /etc/init.d/xvfb stop
+#after_script:
+ # - /etc/init.d/xvfb stop
 
 archive : true
 
