@@ -29,4 +29,4 @@ script:
 
 archive : true
 
-build_image: drydock/u14pytall:tip
+build_image: drydock/u12pytall:tip
