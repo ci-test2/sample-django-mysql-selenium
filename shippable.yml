@@ -1,15 +1,18 @@
 language: python
 
 python:
+  - 2.6
   - 2.7
+  
 addons:
   firefox: "28.0"
+ # selenium: "2.44"
+  
+#build_image: drydock/u12pytpls:tip
+build_image: drydock/u14pytpls:tip
 services:
+  - mysql
   - selenium
-
-env:
-  global:
-    - DISPLAY=:99.0
 
 install:
   - pip install -r requirements.txt
@@ -17,11 +20,8 @@ install:
 before_script: 
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
-  - mysql -e 'create database test;'
-  - /etc/init.d/xvfb start 
+  - mysql -e 'create database if not exists test;'
 
 script:
-  - python manage.py test
+  - xvfb-run python manage.py test
 
-after_script:
-  - /etc/init.d/xvfb stop
