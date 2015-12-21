@@ -9,7 +9,7 @@ addons:
   selenium: "2.42"
   
 #build_image: drydock/u12pytall:tip
-build_image: drydock/u12pytall:prod
+#build_image: drydock/u12pytall:prod
 
 services:
   - mysql
