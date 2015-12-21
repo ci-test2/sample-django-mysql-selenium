@@ -6,9 +6,10 @@ python:
   
 addons:
   firefox: "39.0"
-  selenium: "2.43"
+  selenium: "2.42"
   
-build_image: drydock/u12pytall:tip
+#build_image: drydock/u12pytall:tip
+build_image: drydock/u12pytall:prod
 
 services:
   - mysql
