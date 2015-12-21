@@ -4,9 +4,9 @@ python:
   - 2.6
   - 2.7
   
-addons:
-  firefox: "39.0"
-  selenium: "2.42"
+#addons:
+ # firefox: "39.0"
+  #selenium: "2.42"
   
 #build_image: drydock/u12pytall:tip
 #build_image: drydock/u12pytall:prod
